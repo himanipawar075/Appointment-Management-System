@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: appointment-management-system
+    runtime: java
+    buildCommand: "./gradlew build"  # or "mvn clean install" if you use Maven
+    startCommand: "java -jar target/your-app-name.jar"
+    env: 
+      - key: JAVA_VERSION
+        value: 17
